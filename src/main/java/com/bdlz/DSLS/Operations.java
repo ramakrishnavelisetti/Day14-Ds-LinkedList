@@ -15,4 +15,13 @@ public class Operations {
         linkedList.append(70);
         linkedList.print();
     }
+    public static void addDataAtMiddle(){
+        LinkedList linkedList = new LinkedList();
+        Node secondNode = linkedList.push(70);
+        Node firstNode = linkedList.push(56);
+        Node newNode = new Node(30);
+        linkedList.print();
+        linkedList.insertInBetween(firstNode, newNode);
+        linkedList.print();
+    }
 }
