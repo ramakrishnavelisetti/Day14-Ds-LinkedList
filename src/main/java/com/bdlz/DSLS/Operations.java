@@ -38,4 +38,9 @@ public class Operations {
         linkedList.print();
 
     }
+
+    public static void findNodeBasedOnValue() {
+        LinkedList linkedList = addDataAtStart();
+        linkedList.findNode(30);
+    }
 }
