@@ -27,7 +27,14 @@ public class Operations {
     }
     public static void deleteFirstNode() {
         LinkedList linkedList = addDataAtStart();
-        Node deleteNode = linkedList.pop();
+        linkedList.pop();
+        linkedList.print();
+
+    }
+
+    public static void deleteLastNode() {
+        LinkedList linkedList = addDataAtStart();
+        linkedList.popLast();
         linkedList.print();
 
     }
