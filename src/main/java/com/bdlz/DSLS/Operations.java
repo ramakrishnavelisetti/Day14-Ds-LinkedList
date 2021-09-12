@@ -1,12 +1,13 @@
 package com.bdlz.DSLS;
 
 public class Operations {
-    public static void addDataAtStart(){
+    public static LinkedList addDataAtStart(){
         LinkedList linkedList = new LinkedList();
         linkedList.push(70);
         linkedList.push(30);
         linkedList.push(56);
         linkedList.print();
+        return linkedList;
     }
     public static void addDataAtEnd() {
         LinkedList linkedList = new LinkedList();
@@ -23,5 +24,11 @@ public class Operations {
         linkedList.print();
         linkedList.insertInBetween(firstNode, newNode);
         linkedList.print();
+    }
+    public static void deleteFirstNode() {
+        LinkedList linkedList = addDataAtStart();
+        Node deleteNode = linkedList.pop();
+        linkedList.print();
+
     }
 }
