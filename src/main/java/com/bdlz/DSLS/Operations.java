@@ -44,11 +44,19 @@ public class Operations {
         linkedList.findNode(30);
     }
 
-    public static void InsertDataAtGivenNode() {
+    public static LinkedList InsertDataAtGivenNode() {
         LinkedList linkedList= addDataAtStart();
         Node newNode = new Node(40);
         Node previousNode = linkedList.searchNodeAt(30, newNode);
         System.out.println("Before");
+        linkedList.print();
+        return linkedList;
+    }
+    public static void DeleteAfterNodeAfterSearchNode() {
+        System.out.println("Before");
+        LinkedList linkedList = InsertDataAtGivenNode();
+        System.out.println("after");
+        linkedList.deleteANode(40);
         linkedList.print();
     }
 }

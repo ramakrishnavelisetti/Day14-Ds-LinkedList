@@ -13,6 +13,7 @@ public class LinkedListMain {
         System.out.println("Enter 5 to delete the last node");
         System.out.println("Enter 6 to find index number and node based on value");
         System.out.println("Enter 7 to insert data at given node");
+        System.out.println("Enter 8 to delete  after data after given node");
         switch(scanner.nextInt()) {
             case 1:
                 Operations.addDataAtStart();
@@ -34,6 +35,9 @@ public class LinkedListMain {
                 break;
             case 7:
                 Operations.InsertDataAtGivenNode();
+                break;
+            case 8:
+                Operations.DeleteAfterNodeAfterSearchNode();
                 break;
         }
     }
